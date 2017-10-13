@@ -13,4 +13,7 @@
     "url": "https://github.com/pparamalingam/amzn-stack-lambda/issues"
   },
   "homepage": "https://github.com/pparamalingam/amzn-stack-lambda",
+  "dependencies": {
+    "stackexchange" : "git://github.com/pparamalingam/stackexchange"
+  }  
 }
