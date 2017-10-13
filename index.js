@@ -1,4 +1,4 @@
-// For development/testing purposes
+// Main logic to senf to stackexchange and then Lex
 exports.handler = function(event, context, callback) {
 
   var stackexchange = require('stackexchange');
@@ -8,7 +8,7 @@ exports.handler = function(event, context, callback) {
   var context = new stackexchange(options);
 
   var tag = [];
-      length = languages.length;
+  length = languages.length;
   while(length--) {
      if (event['inputTranscript'].toLowerCase().indexOf(languages[length])!=-1) {
          // one of the langs is in event['inputTranscript']
