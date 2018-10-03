@@ -48,7 +48,8 @@ exports.handler = function(event, context, callback) {
     
     console.log(results.items);
     console.log(results.has_more);
-
+    
+    //This function can be made dynamic to handle all identifiers
     var link = results.items[0]["link"]
     var title = results.items[0]["title"]
     var response ={
